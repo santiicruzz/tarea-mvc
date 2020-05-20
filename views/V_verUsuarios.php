@@ -11,28 +11,57 @@
     <title>Ejercicio MvC</title>
   </head>
   <body>
-        <div class="container text-center py-5">
+        <div class="container-fluid text-center py-2">
             <h1>Usuarios Registrados En El Sistema</h1>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Usuarios</th>                
-                        <th>Nombre</th>                
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                        foreach($usuarios as $user){
-                            echo "<tr>";
-                            echo "<td>".$user['username']."</td>";                   
-                            echo "<td>".$user['nombre']."</td>";
-                            echo "</tr>";
-                        }
-                    ?>
-                </tbody>
-            </table>
+            <div class="container py-3">
+                <table class="table table-striped table-bordered table-hover table-dark">
+                    <thead>
+                        <tr>
+                            <th colspan="3">USUARIOS</th>
+                        </tr>
+                        <tr>
+                            <th>Usuarios</th>                
+                            <th>Nombre</th>                
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                            foreach($usuarios as $user){
+                                echo "<tr>";
+                                echo "<td>".$user['username']."</td>";                   
+                                echo "<td>".$user['nombre']."</td>";
+                                echo "</tr>";
+                            }
+                        ?>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container bg-warning py-2">
+                <div class="row">
+                    <div class="col-8">
+                        <h3>Entendiendo MvC</h3>
+                        <P>Es un estilo de arquitectura de software que separa los datos de una aplicación, la interfaz de usuario, y la lógica de control en tres componentes distintos.</P>   
+                    </div>
+                    <div class="col-4">
+                        <div class="bg-secundary">
+                            <img src="imagen/MVC.png" width="120" height="120" alt="">
+                        </div>    
+                    </div>
+                </div>                                     
+            </div>                     
         </div>
-
+        <footer>
+            <div class="container text-center bg-dark text-white py-3">
+                <div class="row">
+                    <div class="col-6">
+                       <h3>Brian Santiago Cruz Garcia</h3> 
+                    </div>
+                    <div class="col-6">
+                        <h3>Optativa 1</h3>
+                    </div>
+                </div>            
+            </div>
+        </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
