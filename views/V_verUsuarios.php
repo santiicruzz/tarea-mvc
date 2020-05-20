@@ -57,7 +57,7 @@
                        <h3>Brian Santiago Cruz Garcia</h3> 
                     </div>
                     <div class="col-6">
-                        <h3>Optativa 1</h3>
+                        <h4><a href="https://github.com/santiicruzz/tarea-mvc">Perfil GitHub</a></h4>
                     </div>
                 </div>            
             </div>
